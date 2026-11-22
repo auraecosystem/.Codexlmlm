@@ -1,3 +1,8 @@
 [model_providers.ollama]
 name = "lmlm"
 base_url = "http://localhost:11434/v1"
+# IMPORTANT: the top-level key is `mcp_servers` rather than `mcpServers`.
+[mcp_servers.server-name]
+command = "npx"
+args = ["-y", "mcp-server"]
+env = { "API_KEY" = "value" }
