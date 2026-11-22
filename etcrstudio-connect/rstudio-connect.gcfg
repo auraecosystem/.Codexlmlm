@@ -1,0 +1,2 @@
+[Applications]
+Supervisor = /opt/scripts/connect-env.sh
